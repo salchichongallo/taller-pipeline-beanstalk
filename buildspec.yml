@@ -4,8 +4,6 @@ phases:
   pre_build:
     commands:
       - pip install -r requirements.txt
-      - echo ''
-    build:
       - echo 'Listing files'
       - ls -al
 artifacts:
