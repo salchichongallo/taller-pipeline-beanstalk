@@ -8,6 +8,10 @@ data = f.load_file('./heroes.csv')
 def index():
     return jsonify(data)
 
+@application.route("/ping")
+def ping():
+    return jsonify({"message": "pong"})
+
 @application.route("/<string:id>")
 def heroe(id):
     return jsonify(data[id])
